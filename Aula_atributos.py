@@ -26,7 +26,6 @@ while True:
         print("Email invalido, digite novamente")
 senha = input("Digite a senha: ")
 lista_teste = [senha.replace(senha,"*") for senhai in senha ]
-#print(lista_teste)
 nova_senha = "".join(lista_teste)
 user = Acesso(email, nova_senha)
 print(vars(user))
